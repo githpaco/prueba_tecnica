@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tu mano amiga</title>
+       <!--<link rel="stylesheet" href="css/styles.css">-->
+	<style>
+        /* variables CSS */
+    :root {
+        --fondo: #f0f0f0;
+        --fondo2: #ddd;
+        --fondo3: rgba(51, 51, 51, 0.8);
+        --texto: #333; 
+        --texto-destacado: orangered;
+    
+    }	
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 16px;
+    }
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--fondo2);
+    color: var(--texto);
+}
+
+header .logo img {
+    height: 3rem; 
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.25rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--texto-destacado);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <img src="" alt="logo-empresa">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="about.html">Contacto</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <h1>Tu mano amiga</h1>
+        <p>Bienvenido a nuestro sitio web. Aquí encontrarás información útil y recursos para ayudarte.</p>
+        <section>
+            <h2>Servicios</h2>
+            <ul>
+                <li>Hacemos tus tareas cotidianas</li>
+                <li>Limpimos tu hogar</li>
+                <li>Cocinamos para ti</li>
+                <li>Cuidado de niños</li>
+                <li>Cuidaddo de personas con necesidades especiales</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+
+            </div>
+
+            <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
+            <div>
+                <p>Tu mano amiga S.L.</p>
+                <p>Calle Mayor 17</p>
+                <p>48010 Bilbao</p>
+                <p>info@tumanoamiga.com</p>
+                
+            </div>
+          
+        </footer>
+    
+</body>
+</html>
