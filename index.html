@@ -1,84 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu mano amiga</title>
-    <link rel="icon" href="img/mano-amiga.ico" type="image/x-icon" >
-        <!-- estilos-->
-       <!--<link rel="stylesheet" href="css/styles.css">-->
-       <!-- fuentes-->
-         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu mano amiga</title>
+<link rel="icon" href="img/mano-amiga.ico" type="image/x-icon" >
+<!-- estilos-->
+<!--<link rel="stylesheet" href="css/styles.css">-->
+<!-- fuentes-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+/* fuente 2*/
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
-	<style>
-        /* fuente 2*/
-        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-        
-        /*variables*/
+/*variables*/
 
-    :root {
-        --fondo: #f0f0f0;
-        --fondo2: #ddd;
-        --fondo3: rgba(51, 51, 51, 0.8);
-        --texto: #333; 
-        --texto-destacado: orangered;
-    }	
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    html{
-        font-size: 16px;
-        font-family: Roboto, sans-serif;    
-    }
+:root {
+    --fondo: #f0f0f0;
+    --fondo2: #ddd;
+    --fondo3: rgba(51, 51, 51, 0.8);
+    --texto: #333; 
+    --texto-destacado: orangered;
+}	
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: Roboto, sans-serif;    
+}
 /* Header */
 header {
-    font-family: "Cal Sans", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--fondo2);
-    color: var(--texto);
+ font-family: "Cal Sans", sans-serif;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1rem 2rem;
+ background-color: var(--fondo2);
+ color: var(--texto);
 }
-
 header .logo img {
-    height: 3rem; 
+  height: 3rem; 
 }
-
 header nav ul {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
-
 header nav ul li {
-    margin-left: 1.25rem;
+  margin-left: 1.25rem;
 }
-
 header nav ul li a {
-    text-decoration: none;
-    color: var(--texto);
-    font-weight: bold;
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
 }
-
 header nav ul li a:hover {
-    color: var(--texto-destacado);
+  color: var(--texto-destacado);
 }
 header img{
-    height: 2rem;
+   height: 2rem;
 }
 
 /* main */
 main{
-    flex:1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1em;
-
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
 }
+.articles {
+ display: flex;
+flex-direction:column;
+justify-content: center;
+align-items:center;
+gap: 2rem;
+margin-bottom: 3rem;
+}
+article {
+flex: 1;
+display: flex;
+flex-direction: column;
+width:90%;
+gap: 1rem;
+align-items: center;
+justify-content: space-between;
+}
+article img {
+    width: 100%; 
+    height: auto; 
+    max-height: 40vh; 
+    object-fit: cover; 
+    border-radius: 0.5rem;
+}
+article div {
+    flex: 1;
+    padding: 1rem;
+    text-align: left;
+}
+article h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+article p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Galería de Cards */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+	align-items:center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20vw; 
+    height: auto; 
+    max-width: 80vw;
+    max-height: 80vh; 
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 80%; 
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.card div {
+    padding: 1rem;
+}
+
+.card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
 /* footer */
 footer{
     display:flex;
@@ -89,31 +164,38 @@ footer{
 }
 
 footer .socials{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    flex-direction:column;
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ font-size:1.5rem;
+}
+footer .socials a{
+ color: var(--fondo3);
+ margin:0.5rem;
 }
 /** mediaqueries **/
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav ul li {
-        margin: 0.5rem 0;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer p{
-    margin:1.5rem auto;
-   }
+  header {
+    flex-direction: column;
+    align-items: center;
+ }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+ }
+ header nav ul li {
+    margin: 0.5rem 0;
+ }
+ footer {
+    flex-direction: column;
+    align-items: center;
+ }
+ footer p{
+   margin:1.5rem auto;
+ }
+  footer .socials{
+    flex-direction: column;
+}
 }
 
     </style>
@@ -134,60 +216,105 @@ footer .socials{
 </header>
  <main>
         
-      <section>
-            <h1>Tu mano amiga</h1>
-            <p>Bienvenido a nuestro sitio web. Aquí encontrarás información útil y recursos para ayudarte.</p>
+    <section>
+        <h1>Tu mano amiga</h1>
+        <p>Bienvenido a nuestro sitio web. Aquí encontrarás información útil y recursos para ayudarte.</p>
 
-        </section>
-        <h1>Tu Mano Amiga</h1>
+    </section>
+    <h1>Tu Mano Amiga</h1>
 
-        <!-- Articles -->
-        <section class="articles" id="services">
-            <article>
-                <img src="img/cuidado.jpg" alt="cuidado" >
-                    <h2>Artículo 1</h2>
-                    <p>Este es el contenido del primer artículo. Aquí va el texto de ejemplo.</p>
-                </div>
-            </article>
-
-            <article>
-                <img src="" alt="Imagen Artículo 2">
-                <div>
-                    <h2>Artículo 2</h2>
-                    <p>Este es el contenido del segundo artículo. Aquí va el texto de ejemplo.</p>
-                </div>
-            </article>
-        </section>
-
-        <section id="services">
-            <h2>Servicios</h2>
-            <img src="img/cuidado" alt="cuidado">
-            <ul>
-                <li>Hacemos tus tareas cotidianas</li>
-                <li>Limpimos tu hogar</li>
-                <li>Cocinamos para ti</li>
-                <li>Cuidado de niños</li>
-                <li>Cuidaddo de personas con necesidades especiales</li>
-            </ul>
-        </section>
-    </main>
-        <footer>
-            <div class="socials">
-                <a href="https://www.facebook.com" target="_blank">Facebook</a>
-                <a href="https://www.twitter.com" target="_blank">Twitter</a>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    <!-- Articles -->
+    <section class="articles">
+        <article>
+            <img src="img/cuidado.jpg" alt="cuidado" >
+                <h2>Artículo 1</h2>
+                <p>Este es el contenido del primer artículo. Aquí va el texto de ejemplo.</p>
             </div>
+        </article>
 
-            <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
+        <article>
+            <img src="" alt="Imagen Artículo 2">
             <div>
-                <p>Tu mano amiga S.L.</p>
-                <p>Calle Mayor 17</p>
-                <p>48010 Bilbao</p>
-                <p>info@tumanoamiga.com</p>
-                
+                <h2>Artículo 2</h2>
+                <p>Este es el contenido del segundo artículo. Aquí va el texto de ejemplo.</p>
             </div>
-          
-        </footer>
+        </article>
+    </section>
+<!-- Galería de Cards -->
+   <section id="equipo">
+     <h2>Nuestro equipo humano</h2>
+    <div class="gallery">
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Foto de perfil 1">
+            <div>
+                <h3>Título Card 1</h3>
+                <p>Descripción breve del card 1.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="Foto de perfil 2">
+            <div>
+                <h3>Título Card 2</h3>
+                <p>Descripción breve del card 2.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/img-3.jpg" alt="Card 3">
+            <div>
+                <h3>Título Card 3</h3>
+                <p>Descripción breve del card 3.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/img-4.jpg" alt="Card 4">
+            <div>
+                <h3>Título Card 4</h3>
+                <p>Descripción breve del card 4.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/img-5.jpg" alt="Card 5">
+            <div>
+                <h3>Título Card 5</h3>
+                <p>Descripción breve del card 5.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/img-6.jpg" alt="Card 6">
+            <div>
+                <h3>Título Card 6</h3>
+                <p>Descripción breve del card 6.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/img-7.jpg" alt="Card 7">
+            <div>
+                <h3>Título Card 7</h3>
+                <p>Descripción breve del card 7.</p>
+            </div>
+        </div>
+        </div>
+    </section>
 
+</main>
+<!-- footer -->
+<footer>
+ <div class="socials">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+ </div>
+
+ <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
+
+ <div>
+    <p>Tu mano amiga S.L.</p>
+    <p>Calle Mayor 17</p>
+    <p>48010 Bilbao</p>
+    <p>info@tumanoamiga.com</p>
+    
+ </div>   
+</footer>
 </body>
 </html>
