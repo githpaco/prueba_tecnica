@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Tu mano amiga</title>
+        <!-- estilos-->
        <!--<link rel="stylesheet" href="css/styles.css">-->
+       <!-- fuentes-->
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 	<style>
-        /* variables CSS */
+        /* fuente 2*/
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+        
+        /*variables*/
+
     :root {
         --fondo: #f0f0f0;
         --fondo2: #ddd;
         --fondo3: rgba(51, 51, 51, 0.8);
         --texto: #333; 
         --texto-destacado: orangered;
-    
     }	
     *{
         margin: 0;
@@ -23,9 +29,11 @@
     }
     html{
         font-size: 16px;
+        font-family: Roboto, sans-serif;    
     }
 /* Header */
 header {
+    font-family: "Cal Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +63,38 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: var(--texto-destacado);
+}
+
+footer{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--fondo2);
+}
+footer .socials{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+/** mediaqueries **/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin: 0.5rem 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
     </style>
@@ -92,7 +132,6 @@ header nav ul li a:hover {
                 <a href="https://www.facebook.com" target="_blank">Facebook</a>
                 <a href="https://www.twitter.com" target="_blank">Twitter</a>
                 <a href="https://www.instagram.com" target="_blank">Instagram</a>
-
             </div>
 
             <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
@@ -105,6 +144,6 @@ header nav ul li a:hover {
             </div>
           
         </footer>
-    
+    </main>
 </body>
 </html>
