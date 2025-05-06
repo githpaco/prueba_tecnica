@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu mano amiga</title>
+    <link rel="icon" href="img/mano-amiga.ico" type="image/x-icon" >
         <!-- estilos-->
        <!--<link rel="stylesheet" href="css/styles.css">-->
        <!-- fuentes-->
@@ -64,7 +65,21 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--texto-destacado);
 }
+header img{
+    height: 2rem;
+}
 
+/* main */
+main{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+
+}
+/* footer */
 footer{
     display:flex;
     justify-content:space-around;
@@ -72,6 +87,7 @@ footer{
     padding: 1rem 2rem;
     background-color: var(--fondo2);
 }
+
 footer .socials{
     display:flex;
     justify-content:center;
@@ -95,29 +111,57 @@ footer .socials{
         flex-direction: column;
         align-items: center;
     }
+    footer p{
+    margin:1.5rem auto;
+   }
 }
 
     </style>
 </head>
 <body>
-    <header>
+<header>
   <div class="logo">
-    <img src="" alt="logo-empresa">
+    <img src="img/mano-amiga.png" alt="logo-empresa">
     </div>
     <nav>
         <ul>
-            <li><a href="#home">Inicio</a></li>
             <li><a href="#services">Servicios</a></li>
+            <li><a href="#staff">Equipo</a></li>
             <li><a href="about.html">Contacto</a></li>
             <li><a href="contact.html">Contacto</a></li>
         </ul>
 
-    </header>
-    <main>
-        <h1>Tu mano amiga</h1>
-        <p>Bienvenido a nuestro sitio web. Aquí encontrarás información útil y recursos para ayudarte.</p>
-        <section>
+</header>
+ <main>
+        
+      <section>
+            <h1>Tu mano amiga</h1>
+            <p>Bienvenido a nuestro sitio web. Aquí encontrarás información útil y recursos para ayudarte.</p>
+
+        </section>
+        <h1>Tu Mano Amiga</h1>
+
+        <!-- Articles -->
+        <section class="articles" id="services">
+            <article>
+                <img src="img/cuidado.jpg" alt="cuidado" >
+                    <h2>Artículo 1</h2>
+                    <p>Este es el contenido del primer artículo. Aquí va el texto de ejemplo.</p>
+                </div>
+            </article>
+
+            <article>
+                <img src="" alt="Imagen Artículo 2">
+                <div>
+                    <h2>Artículo 2</h2>
+                    <p>Este es el contenido del segundo artículo. Aquí va el texto de ejemplo.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="services">
             <h2>Servicios</h2>
+            <img src="img/cuidado" alt="cuidado">
             <ul>
                 <li>Hacemos tus tareas cotidianas</li>
                 <li>Limpimos tu hogar</li>
@@ -126,7 +170,7 @@ footer .socials{
                 <li>Cuidaddo de personas con necesidades especiales</li>
             </ul>
         </section>
-
+    </main>
         <footer>
             <div class="socials">
                 <a href="https://www.facebook.com" target="_blank">Facebook</a>
@@ -144,6 +188,6 @@ footer .socials{
             </div>
           
         </footer>
-    </main>
+
 </body>
 </html>
