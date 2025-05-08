@@ -1,0 +1,2 @@
+Funcionalidades javascript:
+1-login-logout usando variables de sesión 
