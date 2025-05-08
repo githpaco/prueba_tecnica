@@ -3,4 +3,4 @@ Funcionalidades javascript:
 2-Mostrar la fecha formateada, uso de una instancia de la clase Date de javascript sólo en la página home.html
 3-Habilitar el botón submit del formulario de contacto al hacer check en la casilla de aceptación de la política de privacidad. evento change
 4-Cambio de imágenes al ejecutarse un evento click en la primera iamgen de la página about.html
-5-Mostrar datos enviados desde el formulario por el metodo GET en la página mostrar.html.Recogida de datos por parámetros desde la URL
+5-Mostrar datos enviados desde el formulario por el metodo GET en la página mostrar.html. Recogida de datos por parámetros desde la URL

@@ -261,8 +261,25 @@ footer .socials a{
 #miImagen:hover{
    cursor:pointer;
 /*cursor: url("../img/click.png") 4 12, auto;*/
-  caret-color:red;
+  caret-color:var(--texto-destacado);
   
+}
+/** boton back to top **/
+#backToTopBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+font-size:1.4rem;
+}
+#backToTopBtn:hover{
+background-color: black;
 }
 /** mediaqueries **/
 @media (max-width: 768px) {
