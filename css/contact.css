@@ -1,5 +1,5 @@
 #contact-form-section {
-	width:60%;
+	width:50%;
     max-width: 85%;
     margin: auto;
     background-color: var(--fondo);
@@ -77,6 +77,10 @@ form button:hover {
 .confirmar a{
   color:var(--texto-destacado);
 }
+/* login form */
+#login-form{
+  width:40%;
+}
 /* mensaje error login*/
 #errorMsg{
  color:red;
@@ -89,4 +93,9 @@ form button:hover {
   #contact-form-section {
 	width:85%;
   }
+  /* login form */
+#login-form{
+  width:60%;
 }
+}
+
