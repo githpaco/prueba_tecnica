@@ -86,8 +86,13 @@ form button:hover {
  color:red;
  font-weight:bolder;
 }
-
-
+/** estilos para el boton submit **/
+#myButton:disabled{
+  opacity:0.4;
+}
+#myButton:disabled:hover{
+  background-color:transparent;
+}
    /** mediaqueries **/
 @media (max-width: 768px) {
   #contact-form-section {

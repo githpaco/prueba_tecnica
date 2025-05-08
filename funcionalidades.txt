@@ -1,3 +1,5 @@
 Funcionalidades javascript:
 1-login-logout usando variables de sesión guardar y ciclo for en la comparación y para mostar lista de usuarios registrados
-5-Mostrar la fecha formateada, uso de una instancia de la clase Date de javascript
+2-Mostrar la fecha formateada, uso de una instancia de la clase Date de javascript
+3-Habilitar el botón submit del formulario de contacto al hacer check en la casilla de aceptación de la política de privacidad. evento change
+4-Cambio de imagenes al ejecutarse un evento
