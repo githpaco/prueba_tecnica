@@ -54,7 +54,15 @@ form button:hover {
   cursor: pointer;
   height: 25px;
   width: 25px;
-  margin-right:2vw;
+  margin-right:0.3rem;
+}
+select{
+  background-color:var(--fondo2);
+  border: 1px solid var(--fondo2);
+  font-size:1rem;
+  padding:0.3rem;
+
+  
 }
 .confirmar{
   display: flex;
@@ -77,15 +85,17 @@ form button:hover {
 .confirmar a{
   color:var(--texto-destacado);
 }
-/* login form */
+/* mensaje error*/
+#errorMsg{
+  color:red;
+  font-weight:bolder;
+ }
+
+/* LOGIN FORM */
 #login-form{
   width:40%;
 }
-/* mensaje error login*/
-#errorMsg{
- color:red;
- font-weight:bolder;
-}
+
 /** estilos para el boton submit **/
 #myButton:disabled{
   opacity:0.4;
