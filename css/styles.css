@@ -257,8 +257,12 @@ footer .socials a{
   color: var(--fondo3);
   margin:0.5rem;
 }
+#miImagen{
 
-
+}
+#miImagen:hover{
+  cursor: pointer;
+}
 
 /** mediaqueries **/
 @media (max-width: 768px) {

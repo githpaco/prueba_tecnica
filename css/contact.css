@@ -61,7 +61,7 @@ select{
   border: 1px solid var(--fondo2);
   font-size:1rem;
   padding:0.3rem;
-
+  margin:0.2rem;
   
 }
 .confirmar{
