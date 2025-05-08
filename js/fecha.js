@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //Formato de fecha personalizado
         const dia = mostrarDiaDeLaSemana(hoy);
-        const formatodia = dia + {year: 'numeric', month: 'long', day: 'numeric' }; // Ejemplo: 7 de mayo de 2025
+        const formatodia = {year: 'numeric', month: 'long', day: 'numeric' }; 
+    
    //toLocaleDateString('es-ES') perdite dar formato local a la fecha
-      fechaHoyElemento.textContent = hoy.toLocaleDateString('es-ES', dia);
+      fechaHoyElemento.textContent = dia + " - " + hoy.toLocaleDateString('es-ES', formatodia);
     });
