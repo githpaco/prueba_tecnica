@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+<meta name="description" content="Ofrecemos servicos de cuidado de niños, mayores o personas con necesidades especiales, hacemos tareas domésticas como limpieza, cocina o pequeños arreglos y tambien nos ofrecemos para hacer recados como compras, recogidas o entregas personales, tramites sencillos, etc.">
+<link rel="icon" href="img/mano-amiga.ico" type="image/x-icon" >
+<!-- estilos-->
+<link rel="stylesheet" href="css/styles.css">
+<!-- fuentes-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="img/mano-amiga.png" alt="logo-empresa">
+    </div>
+		<nav>
+	  <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+	 </ul>
+	 <div class="burger">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	 </div>
+	</nav>
+
+</header>
+<div id="fechaHoy"></div>
+ <main>
+    <div class="content-container">
+        <h2>Sesión cerrada</h2>
+        <p>Tu sesión ha sido cerrada correctamente.</p>
+        <a style="color:var(--texto-destacado);" href="home.html">Volver al Login</a>
+    </div>
+
+</main>
+<!-- footer -->
+<footer>
+ <div class="socials">
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+ </div>
+
+ <p>&copy; 2025 Tu mano amiga. Todos los derechos reservados.</p>
+
+ <div>
+    <p>Tu mano amiga S.L.</p>
+    <p>Calle Mayor 17</p>
+    <p>48010 Bilbao</p>
+    <p>info@tumanoamiga.com</p>
+    
+ </div>   
+</footer>
+<!-- SCRIPTS-->
+<script src="session.js"></script>
+<script>
+	sessionStorage.removeItem('isLoggedIn');
+</script>
+</body>
+</html>
+
+
+
+

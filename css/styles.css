@@ -51,7 +51,30 @@ header nav ul li a:hover {
 header img{
    height: 2rem;
 }
-
+/*fecha*/
+#fechaHoy{
+	float:left;
+	font-size:0.8rem;
+	padding:0.5rem;
+	margin:1rem;
+}
+/** logout link **/
+.log-out {
+	margin:1rem;
+	float:right;
+}
+.log-out a{
+    font-size:0.8rem;
+	text-decoration: none;
+    color: var(--texto);
+    padding: 0.5rem 0.5rem;
+    background-color: var(--texto-destacado);
+	border-radius:0.4rem;
+}
+.log-out a:hover{
+	 background-color: var(--fondo);
+    color: var(--texto-destacado);
+}
 /* main */
 h1{
     font-size: 2.2rem;

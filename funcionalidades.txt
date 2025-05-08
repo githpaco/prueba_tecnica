@@ -1,2 +1,2 @@
 Funcionalidades javascript:
-1-login-logout usando variables de sesión 
+1-login-logout usando variables de sesión guardar y ciclo for en la comparación y para mostar lista de usuarios registrados

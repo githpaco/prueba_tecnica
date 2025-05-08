@@ -1,18 +1,57 @@
-// Espera a que el documento HTML esté completamente cargado antes de ejecutar este código.
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('loginForm').addEventListener('submit', function(e) {
-        e.preventDefault();//evita que recargue la página al enviar el formulario con el boton submit
-    //Tomamos los datos usuario y la contraseña del formulario login y los guardamos en 2 constantes
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-    //comparamos si el usuario y la contraseña guardados en la variable de sesion coincide con los nuestros
-        if (username === 'usuario1' && password === '1234') {
-    //si coincide usuario y contraseña guardamos nueva variable de sesión IsLoggedIn con valor true, y redirigimos a index.html
+    // Objeto que almacena los usuarios y sus contraseñas
+    const usuarios = {
+      'usuario1': 'clave123',
+      'invitado': 'secreto',
+      'admin': 'admin123'
+    };
+  //imprimir lista de usuarios y sus passwords en el div usuarios-registrados
+  const usuariosRegistradosDiv = document.getElementById('usuarios-registrados');
+  
+  if (usuariosRegistradosDiv) {
+      const listaUsuarios = document.createElement('ul');
+  
+      for (const usuario in usuarios) {
+        if (usuarios.hasOwnProperty(usuario)) {
+          const elementoLista = document.createElement('li');
+          elementoLista.textContent = `${usuario}: ${usuarios[usuario]}`; // Mostramos usuario y password
+          listaUsuarios.appendChild(elementoLista);
+        }
+      }
+  
+      usuariosRegistradosDiv.appendChild(listaUsuarios);
+    } else {
+      console.error('No se encontró el elemento con el ID "usuarios-registrados".');
+    }
+  
+  //LOGIN
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+  
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const errorMsgElement = document.getElementById('errorMsg');
+  
+      let usuarioAutenticado = false;
+  
+ 
+      // Iteramos sobre las propiedades (usuarios) del objeto
+      for (const user in usuarios) {
+        if (usuarios.hasOwnProperty(user)) { // Verificamos que la propiedad pertenece directamente al objeto
+      // Usamos ciclo for in para comparar elementos del objeto con los introducidos desde el formulario
+            if (user === username && usuarios[user] === password) {
             sessionStorage.setItem('isLoggedIn', 'true');
             window.location.href = 'home.html';
-        } else {
-    // si no coincide pintamos mensaje d eerror en elemento del DOm con id errorMsg
-            document.getElementById('errorMsg').textContent = 'Usuario o contraseña incorrecta.';
+            usuarioAutenticado = true;
+            break; // Salimos del bucle una vez que se encuentra una coincidencia
+          }
         }
-      })
+      }
+  
+      // Si no se encontró ningún usuario con las credenciales proporcionadas
+      if (!usuarioAutenticado) {
+        errorMsgElement.textContent = 'Usuario o contraseña incorrecta.';
+      }
     });
+  });
+  
