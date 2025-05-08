@@ -1,2 +1,3 @@
 Funcionalidades javascript:
 1-login-logout usando variables de sesión guardar y ciclo for en la comparación y para mostar lista de usuarios registrados
+5-Mostrar la fecha formateada, uso de una instancia de la clase Date de javascript
