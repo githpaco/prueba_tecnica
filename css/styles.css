@@ -257,13 +257,13 @@ footer .socials a{
   color: var(--fondo3);
   margin:0.5rem;
 }
-#miImagen{
-
-}
+/** cambio de imagen **/
 #miImagen:hover{
-  cursor: pointer;
+   cursor:pointer;
+/*cursor: url("../img/click.png") 4 12, auto;*/
+  caret-color:red;
+  
 }
-
 /** mediaqueries **/
 @media (max-width: 768px) {
 html{
