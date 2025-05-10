@@ -259,10 +259,12 @@ footer .socials a{
 }
 /** cambio de imagen **/
 #miImagen:hover{
-   cursor:pointer;
-/*cursor: url("../img/click.png") 4 12, auto;*/
-  caret-color:var(--texto-destacado);
-  
+  /*cursor:pointer;*/
+  /*Debe ser una imagen pequeña no mas de 96x96px sino no se verá*/
+  cursor: url(../img/click.png)
+			48 48,
+		auto;
+
 }
 /** boton back to top **/
 #backToTopBtn {
