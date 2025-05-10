@@ -33,4 +33,4 @@
 
 5-Mostrar datos enviados desde el formulario por el metodo GET en la página mostrar.html. Recogida de datos por parámetros desde la URL
 
-6-Boton back to top en páginas home y about.
+6-Botón back to top en páginas home y about.
